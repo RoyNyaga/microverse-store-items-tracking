@@ -11,18 +11,13 @@ default: &default
 development:
   <<: *default
   database: microverse-store-items-tracking_development
-  username: <%= ENV['database_username'] %>
-  password: <%= ENV['database_password'] %>
 
 test:
   <<: *default
   database: microverse-store-items-tracking_test
-  username: <%= ENV['database_username'] %>
-  password: <%= ENV['database_password'] %>
 
 production:
   <<: *default
   database: microverse-store-items-tracking_production
-  username: <%= ENV['database_username'] %>
-  password: <%= ENV['database_password'] %>
+  
   
