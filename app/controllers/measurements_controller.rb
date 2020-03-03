@@ -2,15 +2,15 @@ class MeasurementsController < ApplicationController
 
 	def index
 		@measurements = Measurement.all
-		render :json {
+		render json: {
 			status: 202,
 			measurements: @measurements
 		}
 	end
 
 	def show
-		@measurement = Measurement.find_by(id: params[:measurement][:id])
-		render :json {
+		@measurement = Measurement.find_by(id: params[:id])
+		render json: {
 			status: 202,
 			measurement: @measurement
 		}
@@ -24,14 +24,15 @@ class MeasurementsController < ApplicationController
 			)
 		if @measurement.valid?
 			@measurement.save
-			render :json {
+			render json: {
 				status: :created,
 				measurement: @measurement
 			}
 		else
-			render :json {
+			render json: {
 				status: 401,
 				error: @measurement.errors.full_messages
 			}
+		end
 	end
 end
