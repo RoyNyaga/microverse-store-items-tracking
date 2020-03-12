@@ -1,24 +1,26 @@
-# README
+# Store-item-tracking app: Microverse final capstone project for react redux.
+## This application represents the front-end of rails back-end application which can be access by clicking on this [link](https://github.com/RoyNyaga/microverse-store-items-tracking).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Installation.
+- clone or download the repository from github.
+- Open your terminal to the repository and run npm install to install dependencies and npm update in case some of the dependencies will need to be updated.
+- Start your server by running npm start which will automatically open a tab on your default browser on port 3000, localhost. In case it doesn't open, go to your browser and type http://localhost:3000 and you will ready to consume our back-end api.
 
-Things you may want to cover:
+## Specifications
+1. The user logs in the app, only by typing the username (a proper authenticated login is not a mandatory requirement, but it is in the nice-to-have list)
+2. The user is presented with a list of things that can be measured: left bicep, waist, hips, etc.
+3. The user selects a thing to measure and is presented with a page to introduce the measurement (and timestamp)
+4. The user can access a list of things with measurements and check the progress of it within time
 
-* Ruby version
+## Technologies
+-Eslint
+-javascript ES6
+-React
+-Redux
+-React-redux
+-Axios
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Author
+- [Nyaga Andre Roy](https://github.com/RoyNyaga/)
+- nyagaandreroy@gmail.com
+-237 671 172 775
