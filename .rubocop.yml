@@ -8,8 +8,8 @@ AllCops:
     - "Gemfile"
   DisplayCopNames: true
 
-Metrics/LineLength:
-  Max: 200
+Layout/LineLength:
+  Max: 110
 Metrics/MethodLength:
   Include: ["app/controllers/*"]
   Max: 20
