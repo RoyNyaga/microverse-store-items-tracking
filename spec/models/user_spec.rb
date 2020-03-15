@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
@@ -11,12 +13,12 @@ RSpec.describe User, type: :model do
     end
 
     it 'user should not be empty' do
-    	@user.name = ""
+      @user.name = ''
       expect(@user).not_to be_valid
     end
 
     it 'user name should be greater than equal or greater than 3' do
-    	@user.name = "qw"
+      @user.name = 'qw'
       expect(@user).not_to be_valid
     end
   end

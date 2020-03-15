@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,35 +12,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_02_210716) do
-
+ActiveRecord::Schema.define(version: 20_200_302_210_716) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "items", force: :cascade do |t|
-    t.string "name"
-    t.string "photo"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'items', force: :cascade do |t|
+    t.string 'name'
+    t.string 'photo'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
-  create_table "measurements", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "item_id"
-    t.string "measurement"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["item_id"], name: "index_measurements_on_item_id"
-    t.index ["user_id"], name: "index_measurements_on_user_id"
+  create_table 'measurements', force: :cascade do |t|
+    t.bigint 'user_id'
+    t.bigint 'item_id'
+    t.string 'measurement'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['item_id'], name: 'index_measurements_on_item_id'
+    t.index ['user_id'], name: 'index_measurements_on_user_id'
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_users_on_name"
+  create_table 'users', force: :cascade do |t|
+    t.string 'name'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['name'], name: 'index_users_on_name'
   end
 
-  add_foreign_key "measurements", "items"
-  add_foreign_key "measurements", "users"
+  add_foreign_key 'measurements', 'items'
+  add_foreign_key 'measurements', 'users'
 end
