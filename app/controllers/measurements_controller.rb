@@ -4,7 +4,7 @@ class MeasurementsController < ApplicationController
 		@measurements = Measurement.all
 		render json: {
 			status: 202,
-			measurements: @measurements
+			measurements: @measurements 
 		}
 	end
 
