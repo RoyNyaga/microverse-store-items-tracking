@@ -1,5 +1,5 @@
 # Store Item Tracker API.
-This is the API of a React/Redux front end (application)[https://github.com/RoyNyaga/store-item-tracker-frontend]. The various endpoints allow users to be created, users to log in and to keep track of store Items based on quantity and timestamp.
+This is the API of a React/Redux front end [application](https://github.com/RoyNyaga/store-item-tracker-frontend). The various endpoints allow users to be created, users to log in and to keep track of store Items based on quantity and timestamp.
 
 ## Technologies used.
 * Ruby '2.6.4'
@@ -16,6 +16,6 @@ This is the API of a React/Redux front end (application)[https://github.com/RoyN
 * Ensure that you are using the same versions of Ruby and Rails as stated above.
 
 ## Author
-* (Roy Nyaga)[https://github.com/RoyNyaga/].
+* [Roy Nyaga](https://github.com/RoyNyaga/).
 * nyagaandreroy@gmail.com.
 * +237671172775
